@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: short-service-port
+spec:
+  type: NodePort
+  ports:
+    #App Port
+    - port: 3000
+      #      Pod Port
+      targetPort: 80
+      #      30-000 - 32676 Service Port
+      nodePort: 31200
+  selector:
+    #    label from pod
+    components: frontend
