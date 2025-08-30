@@ -1,0 +1,29 @@
+firstName: John
+lastName: Doe
+age: 30
+isAlive: true
+
+address:
+  city: New York
+  state: NY
+
+#cars: ['BMW', 'Mercedes']
+cars:
+  - Mercedes
+  - BMW
+
+children:
+  - name: Alice
+    age: 5
+  - name: Bob
+    age: 3
+
+#multiline
+bio: |
+  Hello, my name is John.
+  I live in New York.
+
+#singleline
+bio2: >
+  Hello, my name is John.
+  I live in New York.
